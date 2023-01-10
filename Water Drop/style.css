@@ -1,0 +1,39 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drop{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: #54ABFB;
+    border-radius: 58% 43% 33% 64% / 50% 38% 55% 50%;
+    opacity: 0.8;
+    border: 2px solid #3d93ff;
+}
+
+.drop:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #318CFE;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    box-shadow: inset 2px -8px 10px white;
+}
+
+.drop:after{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background: #E6FDFB;
+    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
+    left: 130px;
+    top: 40px;
+    box-shadow: 16px 40px 0 -10px white;
+    opacity: 0.8;
+}
